@@ -206,8 +206,8 @@ img {
         padding-bottom: 500px;
         background-image: url(http://lorempixel.com/200/400/cats/);
         background-repeat: no-repeat;
-        background-position: top left;
-        background-size: cover;
+        background-size:cover;
+        
     }
     
 
