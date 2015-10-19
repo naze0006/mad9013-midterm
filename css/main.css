@@ -137,6 +137,7 @@ img {
     padding: 4rem 1.5rem;
     }
   
+    
     .primary{
     width: 63%;
     float:left;
@@ -207,7 +208,6 @@ img {
         background-image: url(http://lorempixel.com/200/400/cats/);
         background-repeat: no-repeat;
         background-size:cover;
-        
     }
     
 
