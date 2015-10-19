@@ -1,0 +1,251 @@
+/* -- Defaults -- */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,900&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic);
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+html{
+  font-size: 16px;
+  line-height:1.75;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+}
+
+/* -- Layout -- */
+
+.wrapper{
+  width:95%;
+  margin:0 auto;
+  background-color: hsl(200, 10%, 90%);
+  color: hsl(200, 80%, 10%);
+}
+
+/* -- Navigation -- */
+
+.mainnav ul{
+  list-style:none;
+}
+
+.mainnav li{
+  background-color: hsl(200, 80%, 10%);
+}
+    
+.mainnav a, .mainnav a:visited{
+  text-decoration:none;
+  display:block;
+  font-size: 1.5rem;
+  color:hsl(200, 90%, 90%);
+  text-align:center;
+}
+
+.mainnav a:hover, .mainnav a:active{
+  background-color: hsl(200, 90%, 80%);
+  color:hsl(200, 80%, 10%);
+}
+
+
+
+/* -- Content -- */
+.masthead h1{
+  font-size: 2rem;
+  line-height: 2;
+  background: #ddd url("http://lorempixel.com/960/400/cats/") no-repeat 100% 100%;
+  color:  hsl(200, 10%, 100%);
+  text-shadow: 4px 4px 8px hsl(200, 90%, 60%);
+  padding: 0 1.5rem;
+
+}
+h2{
+  padding: 0 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2;
+  color: hsl(200, 80%, 10%);
+  text-align: left;
+}
+h3{
+  padding: 0 1.5rem;
+  font-size: 1.6rem;
+  line-height: 2;
+  text-align: left;
+}
+p{
+  padding: 0 1.5rem 1rem;
+  font-size: 1rem;
+}
+.footer p{
+  padding: 1rem 1.5rem;
+  font-size: 0.8rem;
+  background-color: hsl(200, 80%, 30%);
+  color: hsl(200, 60%, 90%);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+.side p {
+    font-size: 0.9rem;;
+    
+}
+
+
+/* --- Media Queries --- */
+
+/* -- Under 35em --*/
+@media all and (min-width: 35em){
+    
+    .masthead h1{
+    min-height: 250px;
+    text-align: center;
+    }
+    .mainnav li{
+    float:left;
+    width: 25%;
+  }
+    
+}
+
+/* -- between 35em and 50em --*/
+@media all and (min-width:35em) and (max-width:50em){
+    
+    .masthead h1{
+    min-height: 250px;
+    text-align: center;
+    font-size: 2.75rem;
+    padding: 4rem 1.5rem;
+    text-align: center;
+        
+    }
+    .mainnav a{
+    font-size: 1.2rem;
+  }
+    
+}
+
+/* -- between 35em and 60em --*/
+@media all and (min-width:35em) and (max-width:60em){
+  
+    .masthead h1{
+    line-height: 4rem;
+    background-size: 100%;
+    min-height: 200px;
+    text-align: center;
+    font-size: 2.75rem;
+    padding: 4rem 1.5rem;
+    }
+  
+    .primary{
+    width: 63%;
+    float:left;
+    }
+    
+    .mainnav li{
+    float:left;
+    width: 25%;
+    display: block;
+  }
+
+    .side{
+    width:37%;
+    float:right;
+    }
+    
+  .footer{
+      width:100%;
+      clear:both;
+  }
+}
+
+/* -- Over 60em --*/
+@media all and (min-width:60em){
+  
+    .wrapper {
+        padding-top: 270px;
+        width:95%;
+        margin: 0 auto;
+    }
+    
+    .masthead {
+        position:absolute;
+        top:0;
+        lef:0;
+        right:0;
+        width:100%;
+        height: 250px;
+    }
+     
+  .masthead h1{
+    line-height: 15rem;
+    background-size: 100%;
+    /*min-height: 250px;
+    width: 100%;*/
+    font-size: 5rem;
+    text-align: left;
+    padding-left: 2rem;
+    
+  }
+    
+    h2{
+    line-height: 1.20;
+    padding-bottom: 5%;
+}
+    
+    h3{
+  line-height: 1.25;
+  padding-bottom: 5%;
+}
+   
+
+    .mainnav ul{
+        width:25%;
+        float:left;
+        margin-top:0.3rem;
+        padding-bottom: 500px;
+        background-image: url(http://lorempixel.com/200/400/cats/);
+        background-repeat: no-repeat;
+        background-position: top left;
+        background-size: cover;
+    }
+    
+
+     .mainnav li{
+    width: 100%;
+    display: block;
+  }
+
+    .mainnav li a{
+        text-align: left;
+        padding-left: 1rem;
+  }
+    
+  .primary{ 
+    -webkit-columns:250px 2;
+    -moz-columns: 250px 2;
+    columns: 250px 2;
+    -webkit-column-gap : 0.1rem;
+    -moz-column-gap : 0.1rem;
+    column-gap : 0.1rem;
+    float:left;
+    width:50%;
+  }
+   
+  .side{
+    width:25%;
+    float:right;
+  }
+    
+  .footer{
+    width:100%;
+    clear:both;
+  }
+  
+    }
+}
+
+  
+  
+
+
