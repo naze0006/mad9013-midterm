@@ -165,8 +165,6 @@ img {
   
     .wrapper {
         padding-top: 270px;
-        width:95%;
-        margin: 0 auto;
     }
     
     .masthead {
@@ -193,11 +191,10 @@ img {
     line-height: 1.20;
     padding-bottom: 5%;
 }
-    
     h3{
-  line-height: 1.25;
-  padding-bottom: 5%;
-}
+    line-height: 1.25;
+    padding-bottom: 5%;
+    }
    
 
     .mainnav ul{
